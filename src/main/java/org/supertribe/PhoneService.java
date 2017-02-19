@@ -27,7 +27,7 @@ import java.util.List;
 
 import static javax.ejb.LockType.READ;
 
-@Path("/phone")
+@Path("phone")
 @Singleton
 @Lock(READ)
 public class PhoneService {
@@ -51,6 +51,7 @@ public class PhoneService {
         );
 
     }
+    
 
 
 }
