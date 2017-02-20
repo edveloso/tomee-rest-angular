@@ -1,0 +1,9 @@
+jdk:
+  - openjdk
+script:
+mvn verify
+after_success:
+after_failure:
+
+
+
