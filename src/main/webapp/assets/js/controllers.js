@@ -6,7 +6,8 @@ var phonecatApp = angular.module('phonecatApp', []);
 
 phonecatApp.controller('PhoneListCtrl', function($scope, $http) {
   $http.get('phone/list').success(function(data) {
-    $scope.phones = data.phone;
+    $scope.phones = data;
+    alert(data);
   }).error(function(erro){
     alert("o erro: "+ erro);
   });
